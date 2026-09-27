@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINGS — Clothes to Make Your Look Fly.</title>
+  <meta name="description" content="WINGS — Clothes to Make Your Look Fly. First drop March 15, 2027.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">WINGS</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#drop">Drop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WINGS • NEW YORK</p>
+        <h1>MAKE YOUR<br><span>LOOK FLY.</span></h1>
+        <p class="hero-copy">Clothes to Make Your Look Fly.</p>
+        <a class="btn" href="#shop">VIEW THE COLLECTION</a>
+      </div>
+      <div class="wing-mark">WINGS</div>
+    </section>
+
+    <section id="drop" class="drop-banner">
+      <p class="eyebrow">FIRST DROP</p>
+      <h2>MARCH 15, 2027</h2>
+      <p>Join the movement. The first WINGS collection is coming.</p>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>WINGS ESSENTIALS</h2>
+        </div>
+        <span class="coming">COMING SOON</span>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-art tee">
+            <div class="shirt-shape">
+              <span>WINGS</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>WINGS TEE</h3>
+            <p>$25.00</p>
+            <button class="disabled-btn" disabled>AVAILABLE MARCH 15</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art hoodie">
+            <div class="hoodie-shape">
+              <span>WINGS</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>WINGS HOODIE</h3>
+            <p>$45.00</p>
+            <button class="disabled-btn" disabled>AVAILABLE MARCH 15</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-title">
+        <p class="eyebrow">ABOUT WINGS</p>
+        <h2>MORE THAN<br>CLOTHING.</h2>
+      </div>
+      <div class="about-copy">
+        <p>WINGS is more than just clothing. It’s a way to express yourself.</p>
+        <p>WINGS was created by Mark, a young artist and creative from New York. As an artist, I wanted to create something that connects music, fashion, creativity, and individuality.</p>
+        <p>Every design is inspired by the idea of standing out, being yourself, and moving with confidence. WINGS is about creating your own style, expressing who you are, and never being afraid to be different.</p>
+        <p>Because when you wear WINGS, you’re not just putting on clothes — you’re making your look fly.</p>
+        <strong>WINGS — Clothes to Make Your Look Fly.</strong>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="giant">WINGS</div>
+      <p>THIS IS ONLY THE BEGINNING.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">STAY CONNECTED</p>
+      <h2>THE DROP IS COMING.</h2>
+      <p>Follow WINGS for new designs, music, updates, and the official launch.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">INSTAGRAM</a>
+        <a href="#" aria-label="TikTok">TIKTOK</a>
+        <a href="mailto:hello@wingsbrand.example">EMAIL</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">WINGS</div>
+    <p>Clothes to Make Your Look Fly.</p>
+    <p>© 2027 WINGS. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
